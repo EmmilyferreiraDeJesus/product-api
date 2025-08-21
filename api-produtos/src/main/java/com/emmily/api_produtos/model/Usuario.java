@@ -11,16 +11,21 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "produtos")
-public class Produto {
+@Table(name = "usuarios")
+public class Usuario {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column
-    private String nome;
+    @Column(unique = true, nullable = false)
+    private String username;
 
-    @Column
-    private Double preco;
+    @Column(nullable = false)
+    private String password;
+
+    public Usuario(String username, String password){
+        this.username = username;
+        this.password = password;
+    }
 }
