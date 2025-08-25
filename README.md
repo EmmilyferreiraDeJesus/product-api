@@ -19,12 +19,12 @@ API para gerenciamento de produtos e usuários, desenvolvida com o objetivo de p
 
 Essa API permite:
 
-- ✅ Registrar usuário
-- ✅ Autenticação de usuário
-- ✅ Criar produto
+- ✅ Registrar usuários
+- ✅ Autenticar usuários
+- ✅ Criar produtos
 - ✅ Listar produtos
 - ✅ Buscar produto por ID
-- ✅ Deletar produto
+- ✅ Deletar produtos
 - ✅ Proteção de rotas
 - ✅ Tratamento de exceções e padrões de resposta 
 
